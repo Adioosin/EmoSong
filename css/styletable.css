@@ -1,0 +1,125 @@
+h1{
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 15px;
+}
+table{
+  width:100%;
+  table-layout: fixed;
+}
+.tbl-header{
+  background-color: rgba(255,255,255,0.3);
+ }
+.tbl-content{
+  height:400px;
+  overflow-x:auto;
+  margin-top: 0px;
+  
+}
+th{
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+}
+td{
+  padding: 15px;
+  text-align: left;
+  vertical-align:middle;
+  font-weight: 300;
+  font-size: 12px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+
+/* demo styles */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+body{
+  background: rgba(32,32,32,1);
+  font-family: 'Roboto', sans-serif;
+}
+section{
+  margin: 50px;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+    width: 8px;
+} 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(255,255,255,0.3); 
+}
+
+
+/* back buttom*/
+
+* {
+   box-sizing: border-box;
+}
+ .back-button {
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   top: 10%;
+   left: 5%;
+   transform: translate(-50%, -50%);
+   border-radius: 50%;
+   border: #03a9f4 1px solid;
+   overflow: hidden;
+   transition: background 0.3s ease;
+}
+ .back-button.back .arrow-wrap {
+   left: -50%;
+}
+ .back-button:hover {
+   background: #03a9f4;
+}
+ .back-button:hover .arrow-wrap span {
+   background: #fff;
+}
+ .back-button .arrow-wrap {
+   display: block;
+   position: absolute;
+   height: 70%;
+   width: 70%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   transition: left 0.3s ease;
+}
+ .back-button .arrow-wrap span {
+   height: 1px;
+   left: 0;
+   top: 50%;
+   background: #03a9f4;
+   position: absolute;
+   display: block;
+   transition: background 0.3s ease;
+}
+ .back-button .arrow-wrap .arrow-part-1 {
+   width: 100%;
+   transform: translate(0, -50%);
+}
+ .back-button .arrow-wrap .arrow-part-2 {
+   width: 60%;
+   transform: rotate(-45deg);
+   transform-origin: 0 0;
+}
+ .back-button .arrow-wrap .arrow-part-3 {
+   width: 60%;
+   transform: rotate(45deg);
+   transform-origin: 0 0;
+}
+ 
