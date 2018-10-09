@@ -20,7 +20,7 @@ if ($conn->connect_error) {
 
 
 require(__DIR__ . '/vendor/paralleldots/apis/autoload.php');
-set_api_key("5HnUQAC6vRXc7tlJJ35EVUXJZ6HGIieavEdpiM8mn4I");
+set_api_key(--Put API Key here from ParallelDots--);
 echo"<br>";
 
 $path_pic = "C:\\xampp\htdocs\sentiment\saved_images\pic.jpg";
